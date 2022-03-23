@@ -34,8 +34,4 @@ for (var i=0;i<data.length;i++){
    mainSheet.appendRow([data[i].id,data[i].startTime,data[i].endTime,data[i].durationSeconds,data[i].roomSlug,data[i].providerFirstName, data[i].providerLastName,data[i].providerEmail,(data[i].pidList).toString()]);
 }
 
-
-
-
-
 }
