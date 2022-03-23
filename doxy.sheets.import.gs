@@ -23,15 +23,6 @@ var login = JSON.parse(response.getContentText());
 Logger.log(response.getContentText());
 Logger.log(`sessid: ${login["id"]}`);
 
-var requestoptions = {
-  'method' : 'GET',
-    'headers' : {
-    "Accept" : "application/json",
-    "Content-type" : "application/json",
-    "Authorization" : ""
-  }
-}
-
 var getdata = UrlFetchApp.fetch('https://api.doxy.me/api/sessions/exportClinic', { headers: { Authorization: `${login['id']}` } });
 
 Logger.log(getdata.getContentText());
